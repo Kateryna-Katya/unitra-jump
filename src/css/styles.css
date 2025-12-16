@@ -903,6 +903,7 @@ img {
     padding-top: 140px; /* Отступ под фиксированный хедер */
     padding-bottom: 80px;
     min-height: 100vh;
+    background-color: var(--color-accent);
 }
 
 .pages__content {
@@ -917,7 +918,7 @@ img {
 /* Типографика внутри статей */
 .pages__content h1 {
     font-family: var(--font-heading);
-    font-size: clamp(32px, 5vw, 42px);
+    font-size: clamp(26px, 5vw, 42px);
     color: var(--color-primary);
     margin-bottom: 40px;
     padding-bottom: 20px;
