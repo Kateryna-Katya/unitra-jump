@@ -5,26 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/unitra-jump/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/unitra-jump/assets/styles-GLFJY9Dq.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+    <div class="mobile-menu">
+  <nav class="mobile-menu__nav">
+      <a href="#hero" class="mobile-menu__link">Главная</a>
+      <a href="#methodology" class="mobile-menu__link">Методология</a>
+      <a href="#innovations" class="mobile-menu__link">Инновации</a>
+      <a href="#blog" class="mobile-menu__link">Блог</a>
+      <a href="#contact" class="mobile-menu__link mobile-menu__link--btn">Начать сейчас</a>
+  </nav>
+  <div class="mobile-menu__footer">
+      <span>UnitraJump © 2025</span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header__container container">
+      <a href="/" class="header__logo">
+          Unitra<span class="header__logo-accent">Jump</span>.
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+              <li class="header__item"><a href="#methodology" class="header__link">Методология</a></li>
+              <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+          <button class="header__burger" aria-label="Menu">
+              <span></span>
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
 
@@ -39,17 +57,59 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="/" class="footer__logo">Unitra<span class="text-accent">Jump</span>.</a>
+              <p class="footer__desc">
+                  Решения, которые меняют правила игры.
+                  Постройте карьеру, которая работает на вас, используя технологии нового поколения.
+              </p>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Навигация</h3>
+              <ul class="footer__list">
+                  <li><a href="#" class="footer__link">О платформе</a></li>
+                  <li><a href="#innovations" class="footer__link">Технологии</a></li>
+                  <li><a href="#blog" class="footer__link">Карьерный блог</a></li>
+                  <li><a href="#contact" class="footer__link">Консультация</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Правовая информация</h3>
+              <ul class="footer__list">
+                  <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                  <li><a href="cookies.html" class="footer__link">Cookie Policy</a></li>
+                  <li><a href="terms.html" class="footer__link">Terms of Use</a></li>
+                  <li><a href="return.html" class="footer__link">Return Policy</a></li>
+                  <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html" class="footer__link">Personal Data</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Контакты</h3>
+              <ul class="footer__contacts">
+                  <li class="footer__contact-item">
+                      <i data-lucide="map-pin"></i>
+                      <span>Torstraße 142, 10119 Berlin, Deutschland</span>
+                  </li>
+                  <li class="footer__contact-item">
+                      <i data-lucide="phone"></i>
+                      <a href="tel:+493012345678">+49 30 1234 5678</a>
+                  </li>
+                  <li class="footer__contact-item">
+                      <i data-lucide="mail"></i>
+                      <a href="mailto:hello@unitra-jump.blog">hello@unitra-jump.blog</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2025 Unitra Jump. Все права защищены. Платформа уже доступна в Европе.</p>
+      </div>
   </div>
 </footer>
 

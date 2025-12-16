@@ -1,56 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/unitra-jump/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unitra Jump | Карьерный апгрейд нового поколения</title>
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/unitra-jump/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/unitra-jump/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/unitra-jump/assets/styles-GLFJY9Dq.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+    <div class="mobile-menu">
+  <nav class="mobile-menu__nav">
+      <a href="#hero" class="mobile-menu__link">Главная</a>
+      <a href="#methodology" class="mobile-menu__link">Методология</a>
+      <a href="#innovations" class="mobile-menu__link">Инновации</a>
+      <a href="#blog" class="mobile-menu__link">Блог</a>
+      <a href="#contact" class="mobile-menu__link mobile-menu__link--btn">Начать сейчас</a>
+  </nav>
+  <div class="mobile-menu__footer">
+      <span>UnitraJump © 2025</span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header__container container">
+      <a href="/" class="header__logo">
+          Unitra<span class="header__logo-accent">Jump</span>.
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+              <li class="header__item"><a href="#methodology" class="header__link">Методология</a></li>
+              <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+          <button class="header__burger" aria-label="Menu">
+              <span></span>
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
 
 
-    <main>
+    <main class="main" id="smooth-wrapper">
+      <div id="smooth-content">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+  <div id="canvas-container" class="hero__canvas"></div>
+  <div class="hero__content container">
+      <div class="hero__text-wrapper">
+          <span class="hero__badge">Germany • 2025 Edition</span>
+          <h1 class="hero__title">Карьера.<br>Апгрейд.<br><span class="text-accent">Будущее.</span></h1>
+          <p class="hero__subtitle">Инновационная технология поиска пути. Постройте стратегию, которая работает на опережение.</p>
+          <div class="hero__actions-row">
+              <a href="#contact" class="btn btn--primary hero__btn">Оценить перспективы <i data-lucide="arrow-right"></i></a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section methodology" id="methodology">
+  <div class="container">
+      <div class="section__header">
+          <h2 class="section__title">Методология <span class="text-accent">Unitra</span></h2>
+          <p class="section__desc">Мы используем подход, доказавший эффективность на рынке ЕС. Это не просто советы, это алгоритм.</p>
+      </div>
+
+      <div class="grid-3">
+          <div class="card">
+              <div class="card__icon"><i data-lucide="target"></i></div>
+              <h3>Анализ профиля</h3>
+              <p>Глубокий аудит ваших навыков с использованием AI-инструментов для выявления скрытого потенциала.</p>
+          </div>
+          <div class="card">
+              <div class="card__icon"><i data-lucide="zap"></i></div>
+              <h3>Стратегия роста</h3>
+              <p>Пошаговый план действий: от упаковки CV до переговоров о зарплате в немецких компаниях.</p>
+          </div>
+          <div class="card">
+              <div class="card__icon"><i data-lucide="trending-up"></i></div>
+              <h3>Масштабирование</h3>
+              <p>Технологии пассивного карьерного маркетинга. Пусть рекрутеры ищут вас сами.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section innovations" id="innovations">
+  <div class="container">
+      <div class="innovations__wrapper">
+          <div class="innovations__text">
+              <h2 class="section__title text-white">Инновации,<br>которые работают</h2>
+              <p class="section__desc text-light">Платформа года в сегменте HR-Tech. Мы интегрируем передовую цифровую инфраструктуру в процесс вашего трудоустройства.</p>
+              <ul class="check-list">
+                  <li><i data-lucide="check-circle"></i> Автоматизированный мэтчинг вакансий</li>
+                  <li><i data-lucide="check-circle"></i> Предиктивная аналитика зарплат</li>
+                  <li><i data-lucide="check-circle"></i> Нейросетевая оптимизация профиля</li>
+              </ul>
+          </div>
+          <div class="innovations__visual">
+              <div class="glass-card">
+                  <span class="glass-card__stat">98%</span>
+                  <span class="glass-card__label">Точность подбора</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section blog" id="blog">
+  <div class="container">
+      <h2 class="section__title">База знаний</h2>
+      <div class="blog__grid">
+          <article class="blog-card">
+              <div class="blog-card__image">
+                  <img src="/unitra-jump/assets/one-CNX46b3L.jpg" alt="Relocation">
+              </div>
+              <div class="blog-card__content">
+                  <span class="blog-card__tag">Гайд</span>
+                  <h3>Релокация в Германию 2025</h3>
+                  <a href="#contact" class="blog-card__link">Читать <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+          <article class="blog-card">
+              <div class="blog-card__image">
+                  <img src="/unitra-jump/assets/two-DIU2dhil.jpg" alt="Interview">
+              </div>
+              <div class="blog-card__content">
+                  <span class="blog-card__tag">Практика</span>
+                  <h3>Soft Skills для сеньоров</h3>
+                  <a href="#contact" class="blog-card__link">Читать <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+          <article class="blog-card">
+              <div class="blog-card__image">
+                  <img src="/unitra-jump/assets/three-CNGJ2phU.jpg" alt="AI Tools">
+              </div>
+              <div class="blog-card__content">
+                  <span class="blog-card__tag">Тренды</span>
+                  <h3>AI в работе менеджера</h3>
+                  <a href="#contact" class="blog-card__link">Читать <i data-lucide="arrow-right"></i></a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container">
+      <div class="contact__wrapper">
+          <div class="contact__info">
+              <h2 class="section__title">Начните свой<br>Jump сейчас</h2>
+              <p class="contact__desc">Оставьте заявку на бесплатную диагностику карьеры. Наш эксперт свяжется с вами в течение 24 часов.</p>
+
+              <div class="contact__details">
+                  <div class="detail-item">
+                      <i data-lucide="mail"></i>
+                      <span>hello@unitra-jump.blog</span>
+                  </div>
+                  <div class="detail-item">
+                      <i data-lucide="map-pin"></i>
+                      <span>Torstraße 142, Berlin</span>
+                  </div>
+              </div>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+              <div class="form-group">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" id="name" name="name" placeholder="Иван Петров" required>
+                  <span class="error-msg">Введите имя</span>
+              </div>
+
+              <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                  <span class="error-msg">Введите корректный email</span>
+              </div>
+
+              <div class="form-group">
+                  <label for="phone">Телефон</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+49..." required>
+                  <span class="error-msg">Только цифры и код страны</span>
+              </div>
+
+              <div class="form-group captcha-group">
+                  <label id="captchaLabel">Сколько будет 5 + 3?</label>
+                  <input type="text" id="captcha" required>
+                  <span class="error-msg">Ошибка в вычислениях</span>
+              </div>
+
+              <div class="form-checkbox">
+                  <input type="checkbox" id="policy" required>
+                  <label for="policy">Я согласен с <a href="personal-data-policy.html">политикой обработки данных</a></label>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+              <div class="form-success" id="formSuccess">
+                  <h3>Заявка отправлена!</h3>
+                  <p>Мы свяжемся с вами в ближайшее время.</p>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
+      </div>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="/" class="footer__logo">Unitra<span class="text-accent">Jump</span>.</a>
+              <p class="footer__desc">
+                  Решения, которые меняют правила игры.
+                  Постройте карьеру, которая работает на вас, используя технологии нового поколения.
+              </p>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Навигация</h3>
+              <ul class="footer__list">
+                  <li><a href="#" class="footer__link">О платформе</a></li>
+                  <li><a href="#innovations" class="footer__link">Технологии</a></li>
+                  <li><a href="#blog" class="footer__link">Карьерный блог</a></li>
+                  <li><a href="#contact" class="footer__link">Консультация</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Правовая информация</h3>
+              <ul class="footer__list">
+                  <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                  <li><a href="cookies.html" class="footer__link">Cookie Policy</a></li>
+                  <li><a href="terms.html" class="footer__link">Terms of Use</a></li>
+                  <li><a href="return.html" class="footer__link">Return Policy</a></li>
+                  <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html" class="footer__link">Personal Data</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Контакты</h3>
+              <ul class="footer__contacts">
+                  <li class="footer__contact-item">
+                      <i data-lucide="map-pin"></i>
+                      <span>Torstraße 142, 10119 Berlin, Deutschland</span>
+                  </li>
+                  <li class="footer__contact-item">
+                      <i data-lucide="phone"></i>
+                      <a href="tel:+493012345678">+49 30 1234 5678</a>
+                  </li>
+                  <li class="footer__contact-item">
+                      <i data-lucide="mail"></i>
+                      <a href="mailto:hello@unitra-jump.blog">hello@unitra-jump.blog</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2025 Unitra Jump. Все права защищены. Платформа уже доступна в Европе.</p>
+      </div>
   </div>
 </footer>
 
+    <div class="cookie-popup" id="cookiePopup">
+      <div class="cookie-content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+          <button class="btn btn--primary btn--sm" id="acceptCookies">Принять</button>
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 
+    <script>
+      lucide.createIcons();
+  </script>
   </body>
 </html>
