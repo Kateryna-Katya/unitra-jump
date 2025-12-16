@@ -1,19 +1,37 @@
+<div class="mobile-menu">
+  <nav class="mobile-menu__nav">
+      <a href="#hero" class="mobile-menu__link">Главная</a>
+      <a href="#methodology" class="mobile-menu__link">Методология</a>
+      <a href="#innovations" class="mobile-menu__link">Инновации</a>
+      <a href="#blog" class="mobile-menu__link">Блог</a>
+      <a href="#contact" class="mobile-menu__link mobile-menu__link--btn">Начать сейчас</a>
+  </nav>
+  <div class="mobile-menu__footer">
+      <span>UnitraJump © 2025</span>
+  </div>
+</div>
+
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="header__container container">
+      <a href="/" class="header__logo">
+          Unitra<span class="header__logo-accent">Jump</span>.
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+              <li class="header__item"><a href="#methodology" class="header__link">Методология</a></li>
+              <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+          <button class="header__burger" aria-label="Menu">
+              <span></span>
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
